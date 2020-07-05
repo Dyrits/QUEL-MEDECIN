@@ -4,7 +4,7 @@
 
 ### Cursus
 ENI | La Programmation Orientée Objet (POO) avec Java  
-~ [Module 3 - La création de classes](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2003%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%201.pdf)
+~ [Module 3 - La création de classes](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2003%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%201.pdf)  
 ~ [Module 4 - Les associations](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2004%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%202.pdf)
 
 ### Énoncé (par l'ENI)
