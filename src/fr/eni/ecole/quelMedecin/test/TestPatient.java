@@ -7,7 +7,8 @@ import java.time.LocalDate;
 /**
  * Classe de test pour l'instanciation de patients pour la partie 1.
  */
-/* public class TestPatient {
+public class TestPatient {
+    /*
     public static void main(String[] args) {
         try {
             Patient vambuceHillary = new Patient(
@@ -44,9 +45,10 @@ import java.time.LocalDate;
             System.out.println("-----");
 
         } catch (Exception exception) {
-            System.err.println("Erreur lors de la création d'un ou plusieurs patients.");
+            System.err.println("Une erreur est survenue lors de la création d'un patient.");
             System.err.println(exception);
         }
     }
+    */
 }
- */
+

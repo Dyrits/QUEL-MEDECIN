@@ -7,10 +7,10 @@ public class Adresse {
     /**
      * Constructeur comprenant les champs principaux.
      *
-     * @param numero Numéro de la voie.
-     * @param voie Nom de la voie.
-     * @param codePostal Code postal.
-     * @param ville Ville.
+     * @param numero int | Numéro de la voie.
+     * @param voie String | Nom de la voie.
+     * @param codePostal int | Code postal.
+     * @param ville String | Ville.
      */
     public Adresse(int numero, String voie, int codePostal, String ville) {
         setNumero(numero);
@@ -34,12 +34,12 @@ public class Adresse {
     /**
      * Constructeur comprenant l'ensemble des champs.
      *
-     * @param mentionsComplementaires Mentions complémentaires.
-     * @param numero Numéro de la voie.
-     * @param complementNumero Complément du numéro de la voie.
-     * @param voie  Nom de la voie.
-     * @param codePostal Code postal.
-     * @param ville Ville.
+     * @param mentionsComplementaires String | Mentions complémentaires.
+     * @param numero int | Numéro de la voie.
+     * @param complementNumero String | Complément du numéro de la voie.
+     * @param voie  String | Nom de la voie.
+     * @param codePostal int | Code postal.
+     * @param ville String | Ville.
      */
     public Adresse(String mentionsComplementaires, int numero, String complementNumero, String voie, int codePostal, String ville) {
         this(numero, voie, codePostal, ville);

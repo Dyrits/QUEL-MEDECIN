@@ -41,7 +41,7 @@ public class TestRDV {
 			RendezVous rdv = new RendezVous(c1, adhemar, LocalDate.of(2020, 5, 23));
 			rdv.afficher();
 		} catch (Exception exception)  {
-			System.err.println("Erreur lors de lacréation du patient.");
+			System.err.println("Une erreur est survenue lors de la création d'un patient.");
 			System.err.println(exception);
 		}
 

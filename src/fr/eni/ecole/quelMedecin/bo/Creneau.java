@@ -7,16 +7,16 @@ import java.time.format.FormatStyle;
 public class Creneau {
     LocalTime heureDebut;
     int duree;
-    MedecinGeneraliste medecin;
+    Medecin medecin;
 
     /**
      * Constructeur.
      *
-     * @param heureDebut Heure de début du créneau.
-     * @param duree Durée, en minutes, du créneau.
-     * @param medecin Médecin associé au créneau.
+     * @param heureDebut LocalTime |  Heure de début du créneau.
+     * @param duree int | Durée, en minutes, du créneau.
+     * @param medecin Medecin | Médecin associé au créneau.
      */
-    public Creneau(LocalTime heureDebut, int duree, MedecinGeneraliste medecin) {
+    public Creneau(LocalTime heureDebut, int duree, Medecin medecin) {
         setHeureDebut(heureDebut);
         setDuree(duree);
         setMedecin(medecin);
@@ -46,7 +46,7 @@ public class Creneau {
 
     public void setDuree(int duree) { this.duree = duree; }
 
-    public MedecinGeneraliste getMedecin() { return medecin; }
+    public Medecin getMedecin() { return medecin; }
 
-    public void setMedecin(MedecinGeneraliste medecin) { this.medecin = medecin; }
+    public void setMedecin(Medecin medecin) { this.medecin = medecin; }
 }

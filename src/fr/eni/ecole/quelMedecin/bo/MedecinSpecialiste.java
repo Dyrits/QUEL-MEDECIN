@@ -1,7 +1,8 @@
 package fr.eni.ecole.quelMedecin.bo;
 
-public class MedecinGeneraliste extends  Medecin {
-    private static int tarif = 25;
+public class MedecinSpecialiste extends Medecin {
+    private int tarif;
+    private String specialite;
 
     /**
      * Appel du constructeur parent.
@@ -11,8 +12,10 @@ public class MedecinGeneraliste extends  Medecin {
      * @param telephone String | Téléphone du médecin.
      * @param adresse Adresse [ Adresse du médecin.
      */
-    public MedecinGeneraliste(String nom, String prenom, String telephone, Adresse adresse) {
+    public MedecinSpecialiste(String nom, String prenom, String telephone, Adresse adresse, String specialite, int tarif) {
         super(nom, prenom, telephone, adresse);
+        setSpecialite(specialite);
+        setTarif(tarif);
     }
 
     /**
@@ -21,6 +24,7 @@ public class MedecinGeneraliste extends  Medecin {
     @Override
     public void afficher() {
         super.afficher();
+        System.out.println("Spécialité : " + getSpecialite());
         System.out.println("Tarif : " + getTarif() + "€");
         System.out.println("Adresse : ");
         getAdresse().afficher();
@@ -30,7 +34,11 @@ public class MedecinGeneraliste extends  Medecin {
 
     // GETTERS AND SETTERS
 
-    public static int getTarif() { return tarif; }
+    public int getTarif() { return this.tarif; }
 
-    public static void setTarif(int tarif) { MedecinGeneraliste.tarif = tarif; }
+    public void setTarif(int tarif) { this.tarif = tarif; }
+
+    public String getSpecialite() { return this.specialite; }
+
+    public void setSpecialite(String specialite) { this.specialite = specialite; }
 }

@@ -12,9 +12,9 @@ public class RendezVous {
     /**
      * Constructeur.
      *
-     * @param creneau Créneau du rendez-vous.
-     * @param patient Patient concerné.
-     * @param date Date du rendez-vous.
+     * @param creneau Creneau | Créneau du rendez-vous.
+     * @param patient Patient | Patient concerné.
+     * @param date LocalDate | Date du rendez-vous.
      */
     public RendezVous (Creneau creneau, Patient patient, LocalDate date) {
         setCreneau(creneau);
@@ -32,6 +32,8 @@ public class RendezVous {
         getPatient().afficher();
     }
 
+
+    // GETTERS AND SETTERS
 
     public Creneau getCreneau() { return this.creneau; }
 

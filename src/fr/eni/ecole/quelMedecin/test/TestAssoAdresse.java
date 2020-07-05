@@ -39,7 +39,7 @@ public class TestAssoAdresse {
 			System.out.println("------------------------------------------------------------------");
 			adhemar.afficher();
 		} catch (Exception exception) {
-			System.err.println("La création et/ou l'affichage des patients a rencontré un problème.");
+			System.err.println("Une erreur est survenue lors de la création d'un patient.");
 			System.err.println(exception);
 		}
 	}

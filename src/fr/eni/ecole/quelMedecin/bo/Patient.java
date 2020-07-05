@@ -4,36 +4,32 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
-public class Patient {
-    private String nom, prenom, telephone, commentaires;
+public class Patient extends Personne {
+    private String commentaires;
     private char sexe;
     private long numeroSecuriteSociale;
     private LocalDate dateDeNaissance;
-    private Adresse adresse;
 
     /**
      * Constructeur comportant l'ensemble des champs.
      * L'appel au constructeur sans renseigner le champs commentaire initialise celui-ci à "[Aucun commentaire]".
      *
-     * @param nom Nom du patient.
-     * @param prenom Prénom du patient.
-     * @param sexe Sexe du patient (M/F).
-     * @param telephone Numéro de téléphone.
-     * @param numeroSecuriteSociale Numéro de sécurité sociale de 13 chiffres avec clé de deux chiffres.
-     * @param dateDeNaissance Date de naissance formaté via LocalDate.
-     * @param commentaires Commentaires éventuelles.
-     * @param adresse Instance de la classe adresse correspondant à l'adresse du patient.
+     * @param nom String | Nom du patient.
+     * @param prenom String | Prénom du patient.
+     * @param sexe char | Sexe du patient (M/F).
+     * @param telephone String | Numéro de téléphone.
+     * @param numeroSecuriteSociale long | Numéro de sécurité sociale de 13 chiffres avec clé de deux chiffres.
+     * @param dateDeNaissance LocalDate | Date de naissance du patient formaté via LocalDate.
+     * @param commentaires String | Commentaires éventuelles.
+     * @param adresse Adresse | Adresse du patient.
      * @throws Exception Le sexe doit être F ou M, et le numéro de sécurité sociale doit comporter un total de 15 chiffres.
      */
     public Patient(String nom, String prenom, char sexe, String telephone, long numeroSecuriteSociale, LocalDate dateDeNaissance, String commentaires, Adresse adresse) throws Exception {
-        setNom(nom);
-        setPrenom(prenom);
+        super(nom, prenom, telephone, adresse);
         setSexe(sexe);
-        setTelephone(telephone);
         setNumeroSecuriteSociale(numeroSecuriteSociale);
         setDateDeNaissance(dateDeNaissance);
         setCommentaires(commentaires);
-        setAdresse(adresse);
     }
 
     public Patient(String nom, String prenom, char sexe, String telephone, long numeroSecuriteSociale, LocalDate dateDeNaissance, Adresse adresse) throws Exception {
@@ -44,9 +40,9 @@ public class Patient {
     /**
      * Affiche l'ensemble des informations pour un patient.
      */
+    @Override
     public void afficher() {
-        System.out.println(getNom() + " " + getPrenom());
-        System.out.println("Téléphone : " + getTelephone());
+        super.afficher();
         System.out.println("Sexe : " + getSexe());
         System.out.println("Numéro de sécurité sociale : " + getNumeroSecuriteSociale());
         System.out.println("Date de naissance : " + getDateDeNaissance().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)));
@@ -56,18 +52,6 @@ public class Patient {
 
 
     // GETTERS AND SETTERS
-
-    public String getNom() { return this.nom; }
-
-    public void setNom(String nom) { this.nom = nom.toUpperCase(); }
-
-    public String getPrenom() { return this.prenom; }
-
-    public void setPrenom(String prenom) { this.prenom = prenom; }
-
-    public String getTelephone() { return this.telephone; }
-
-    public void setTelephone(String telephone) { this.telephone = telephone; }
 
     public String getCommentaires() { return this.commentaires; }
 
@@ -82,15 +66,14 @@ public class Patient {
     }
 
     public long getNumeroSecuriteSociale() { return this.numeroSecuriteSociale; }
+
     public void setNumeroSecuriteSociale(long numeroSecuriteSociale) throws Exception {
         if (String.valueOf(numeroSecuriteSociale).length() == 15) {
             this.numeroSecuriteSociale = numeroSecuriteSociale;
         } else throw new Exception("Le numéro de sécurité sociale doit comporter 15 chiffres.");
-
     }
 
     public LocalDate getDateDeNaissance() { return this.dateDeNaissance; }
-    public void setDateDeNaissance(LocalDate dateDeNaissance) { this.dateDeNaissance = dateDeNaissance; }
 
-    public void setAdresse(Adresse adresse) { this.adresse = adresse; }
+    public void setDateDeNaissance(LocalDate dateDeNaissance) { this.dateDeNaissance = dateDeNaissance; }
 }

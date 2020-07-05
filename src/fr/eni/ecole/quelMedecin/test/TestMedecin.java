@@ -5,8 +5,9 @@ import fr.eni.ecole.quelMedecin.bo.MedecinGeneraliste;
 /**
  * Classe de test pour l'instanciation de médecins pour la partie 1.
  */
-/* public class TestMedecin {
+public class TestMedecin {
 
+    /*
     public static void main(String[] args) {
         // Création des instances:
         MedecinGeneraliste malanicheMelanie = new MedecinGeneraliste("Malanice", "Mélanie", "02.28.03.17.28");
@@ -33,5 +34,5 @@ import fr.eni.ecole.quelMedecin.bo.MedecinGeneraliste;
         tableDjemila.afficher();
         System.out.println("-----");
     }
+    */
 }
- */
