@@ -1,11 +1,11 @@
-# Quel Médecin 1
+# Quel Médecin
 
 ## A propos de ce projet
 
 ### Cursus
 ENI | La Programmation Orientée Objet (POO) avec Java  
-~ Module 3 - La création de classes  
-~ Module 4 - Les associations
+~ [Module 3 - La création de classes](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2003%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%201.pdf)
+~ [Module 4 - Les associations](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2004%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%202.pdf)
 
 ### Énoncé (par l'ENI)
 
@@ -27,8 +27,7 @@ Ce TP est la suite de l application de prise de rendez-vous d'un cabinet médica
 Dans cette itération, nos instances vont pouvoir interagir entre elles par associations.
 - Reprendre le projet QuelMedecin.
 
-
-
+</details>
 
 ### Technologie principale
 - Java
@@ -47,7 +46,7 @@ Les précédents fichiers de test ont été commentés, n'étant plus à jour.
 
 ### Statut
 Partie 1 - Terminée  
-Partie 2 - En cours
+Partie 2 - Terminée
 
 #### Dernière mise à jour
 05/07/2020  
