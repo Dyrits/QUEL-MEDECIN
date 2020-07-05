@@ -2,6 +2,9 @@ package fr.eni.ecole.quelMedecin.test;
 
 import fr.eni.ecole.quelMedecin.bo.Adresse;
 
+/**
+ * Classe de test pour l'instanciation d'adresses pour la partie 1.
+ */
 public class TestAdresse {
     public static void main(String[] args) {
         Adresse zacMN = new Adresse("ZAC du Moulin Neuf", 2, "B", "rue Benjamin Franklin", 44800, "Saint Herblain");

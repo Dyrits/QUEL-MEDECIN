@@ -1,6 +1,5 @@
 package fr.eni.ecole.quelMedecin.bo;
 
-import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -10,6 +9,7 @@ public class Patient {
     private char sexe;
     private long numeroSecuriteSociale;
     private LocalDate dateDeNaissance;
+    private Adresse adresse;
 
     /**
      * Constructeur comportant l'ensemble des champs.
@@ -22,9 +22,10 @@ public class Patient {
      * @param numeroSecuriteSociale Numéro de sécurité sociale de 13 chiffres avec clé de deux chiffres.
      * @param dateDeNaissance Date de naissance formaté via LocalDate.
      * @param commentaires Commentaires éventuelles.
+     * @param adresse Instance de la classe adresse correspondant à l'adresse du patient.
      * @throws Exception Le sexe doit être F ou M, et le numéro de sécurité sociale doit comporter un total de 15 chiffres.
      */
-    public Patient(String nom, String prenom, char sexe, String telephone, long numeroSecuriteSociale, LocalDate dateDeNaissance, String commentaires) throws Exception {
+    public Patient(String nom, String prenom, char sexe, String telephone, long numeroSecuriteSociale, LocalDate dateDeNaissance, String commentaires, Adresse adresse) throws Exception {
         setNom(nom);
         setPrenom(prenom);
         setSexe(sexe);
@@ -32,10 +33,11 @@ public class Patient {
         setNumeroSecuriteSociale(numeroSecuriteSociale);
         setDateDeNaissance(dateDeNaissance);
         setCommentaires(commentaires);
+        setAdresse(adresse);
     }
 
-    public Patient(String nom, String prenom, char sexe, String telephone, long numeroSecuriteSociale, LocalDate dateDeNaissance) throws Exception {
-        this(nom, prenom, sexe, telephone, numeroSecuriteSociale, dateDeNaissance, "[Aucun commentaire]");
+    public Patient(String nom, String prenom, char sexe, String telephone, long numeroSecuriteSociale, LocalDate dateDeNaissance, Adresse adresse) throws Exception {
+        this(nom, prenom, sexe, telephone, numeroSecuriteSociale, dateDeNaissance, "[Aucun commentaire]", adresse);
     }
 
 
@@ -49,7 +51,9 @@ public class Patient {
         System.out.println("Numéro de sécurité sociale : " + getNumeroSecuriteSociale());
         System.out.println("Date de naissance : " + getDateDeNaissance().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG)));
         System.out.println("Commentaires : " + getCommentaires());
+        this.adresse.afficher();
     }
+
 
     // GETTERS AND SETTERS
 
@@ -78,7 +82,6 @@ public class Patient {
     }
 
     public long getNumeroSecuriteSociale() { return this.numeroSecuriteSociale; }
-
     public void setNumeroSecuriteSociale(long numeroSecuriteSociale) throws Exception {
         if (String.valueOf(numeroSecuriteSociale).length() == 15) {
             this.numeroSecuriteSociale = numeroSecuriteSociale;
@@ -87,6 +90,7 @@ public class Patient {
     }
 
     public LocalDate getDateDeNaissance() { return this.dateDeNaissance; }
-
     public void setDateDeNaissance(LocalDate dateDeNaissance) { this.dateDeNaissance = dateDeNaissance; }
+
+    public void setAdresse(Adresse adresse) { this.adresse = adresse; }
 }

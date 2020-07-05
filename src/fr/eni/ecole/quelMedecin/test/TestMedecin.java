@@ -2,7 +2,10 @@ package fr.eni.ecole.quelMedecin.test;
 
 import fr.eni.ecole.quelMedecin.bo.MedecinGeneraliste;
 
-public class TestMedecin {
+/**
+ * Classe de test pour l'instanciation de médecins pour la partie 1.
+ */
+/* public class TestMedecin {
 
     public static void main(String[] args) {
         // Création des instances:
@@ -31,3 +34,4 @@ public class TestMedecin {
         System.out.println("-----");
     }
 }
+ */

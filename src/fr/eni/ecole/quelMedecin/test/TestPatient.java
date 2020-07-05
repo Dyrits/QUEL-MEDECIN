@@ -4,7 +4,10 @@ import fr.eni.ecole.quelMedecin.bo.Patient;
 
 import java.time.LocalDate;
 
-public class TestPatient {
+/**
+ * Classe de test pour l'instanciation de patients pour la partie 1.
+ */
+/* public class TestPatient {
     public static void main(String[] args) {
         try {
             Patient vambuceHillary = new Patient(
@@ -46,3 +49,4 @@ public class TestPatient {
         }
     }
 }
+ */
