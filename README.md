@@ -39,6 +39,8 @@ Dans cette itération, nous ajoutons la notion de classe d'héritage
 
 </details>
 
+> Plus de détails sont disponibles dans les fichiers au format PDF correspondant à chaque énoncé.
+
 ### Technologie principale
 - Java
 
