@@ -19,7 +19,7 @@ public class MedecinSpecialiste extends Medecin {
     }
 
     @Override
-    protected void getSpecificites() {
+    protected void afficherSpecificites() {
         System.out.println("Spécialité : " + getSpecialite());
         System.out.println("Tarif : " + getTarif() + "€");
     }

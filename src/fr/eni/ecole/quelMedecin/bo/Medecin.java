@@ -22,7 +22,7 @@ public abstract class Medecin extends Personne {
     @Override
     public void afficher() {
         super.afficher();
-        getSpecificites();
+        afficherSpecificites();
         getAdresse().afficher();
         System.out.println("Adresse : ");
         this.afficherCréneaux();
@@ -30,7 +30,7 @@ public abstract class Medecin extends Personne {
 
     // ABSTRACT METHODS
 
-    protected abstract void getSpecificites();
+    protected abstract void afficherSpecificites();
 
     /**
      * Permet d'afficher l'ensemble des créneaux d'un médecin.

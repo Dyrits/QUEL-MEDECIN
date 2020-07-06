@@ -16,7 +16,7 @@ public class MedecinGeneraliste extends  Medecin {
     }
 
     @Override
-    protected void getSpecificites() {
+    protected void afficherSpecificites() {
         System.out.println("Tarif : " + getTarif() + "€");
     }
 
