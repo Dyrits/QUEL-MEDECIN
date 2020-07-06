@@ -1,8 +1,8 @@
 package fr.eni.ecole.quelMedecin.bo;
 
 public class Personne {
-    protected String nom, prenom, telephone;
-    protected Adresse adresse;
+    private String nom, prenom, telephone;
+    private Adresse adresse;
 
     /**
      * Constructeur de la classe mère "Personne".

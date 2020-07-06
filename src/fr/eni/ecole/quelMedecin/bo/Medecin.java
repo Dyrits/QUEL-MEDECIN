@@ -1,7 +1,7 @@
 package fr.eni.ecole.quelMedecin.bo;
 
 public abstract class Medecin extends Personne {
-    protected Creneau[] creneaux = new Creneau[15];
+    private Creneau[] creneaux = new Creneau[15];
 
     /**
      * Appel du constructeur parent.
