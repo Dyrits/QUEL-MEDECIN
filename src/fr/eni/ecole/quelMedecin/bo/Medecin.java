@@ -3,7 +3,6 @@ package fr.eni.ecole.quelMedecin.bo;
 public abstract class Medecin extends Personne {
     protected Creneau[] creneaux = new Creneau[15];
 
-
     /**
      * Appel du constructeur parent.
      *
@@ -25,17 +24,6 @@ public abstract class Medecin extends Personne {
         afficherSpecificites();
         getAdresse().afficher();
         System.out.println("Adresse : ");
-        this.afficherCréneaux();
-    }
-
-    // ABSTRACT METHODS
-
-    protected abstract void afficherSpecificites();
-
-    /**
-     * Permet d'afficher l'ensemble des créneaux d'un médecin.
-     */
-    protected void afficherCréneaux() {
         if (getCreneaux()[0] == null ) { return; }
         System.out.println("Créneaux : ");
         for (Creneau creneau : getCreneaux()) {
@@ -56,6 +44,15 @@ public abstract class Medecin extends Personne {
         else { getCreneaux()[index] = creneau; }
 
     }
+
+
+    // ABSTRACT METHODS
+
+    /**
+     * Affiche les spécificités propre à une classe enfant.
+     */
+    protected abstract void afficherSpecificites();
+
 
     // GETTERS AND SETTERS
 

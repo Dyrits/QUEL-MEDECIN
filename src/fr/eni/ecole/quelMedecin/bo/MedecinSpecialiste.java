@@ -18,6 +18,7 @@ public class MedecinSpecialiste extends Medecin {
         setTarif(tarif);
     }
 
+
     @Override
     protected void afficherSpecificites() {
         System.out.println("Spécialité : " + getSpecialite());
