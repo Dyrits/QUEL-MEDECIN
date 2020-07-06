@@ -18,17 +18,10 @@ public class MedecinSpecialiste extends Medecin {
         setTarif(tarif);
     }
 
-    /**
-     * Affiche l'ensemble des informations pour un médecin.
-     */
     @Override
-    public void afficher() {
-        super.afficher();
+    protected void getSpecificites() {
         System.out.println("Spécialité : " + getSpecialite());
         System.out.println("Tarif : " + getTarif() + "€");
-        System.out.println("Adresse : ");
-        getAdresse().afficher();
-        this.afficherCréneaux();
     }
 
 

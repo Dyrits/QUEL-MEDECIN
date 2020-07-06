@@ -15,16 +15,9 @@ public class MedecinGeneraliste extends  Medecin {
         super(nom, prenom, telephone, adresse);
     }
 
-    /**
-     * Affiche l'ensemble des informations pour un médecin.
-     */
     @Override
-    public void afficher() {
-        super.afficher();
+    protected void getSpecificites() {
         System.out.println("Tarif : " + getTarif() + "€");
-        System.out.println("Adresse : ");
-        getAdresse().afficher();
-        this.afficherCréneaux();
     }
 
 

@@ -1,6 +1,6 @@
 package fr.eni.ecole.quelMedecin.bo;
 
-public class Medecin extends Personne {
+public abstract class Medecin extends Personne {
     protected Creneau[] creneaux = new Creneau[15];
 
 
@@ -15,6 +15,22 @@ public class Medecin extends Personne {
     public Medecin(String nom, String prenom, String telephone, Adresse adresse) {
         super(nom, prenom, telephone, adresse);
     }
+
+    /**
+     * Affiche l'ensemble des informations d'un médecin.
+     */
+    @Override
+    public void afficher() {
+        super.afficher();
+        getSpecificites();
+        getAdresse().afficher();
+        System.out.println("Adresse : ");
+        this.afficherCréneaux();
+    }
+
+    // ABSTRACT METHODS
+
+    protected abstract void getSpecificites();
 
     /**
      * Permet d'afficher l'ensemble des créneaux d'un médecin.

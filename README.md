@@ -59,7 +59,8 @@ Les précédents fichiers de test n'étant plus à jour ont été commentés.
 <details markdown="block">
 <summary>Partie 3</summary> 
 
-Les fichiers TestPersonnes.java et TestSpecialistes.java ont été fournis avec l'énoncé de la troisième partie. Ils ont été légèrement modifiés afin de correspndre à l'architecture des classes.
+Les fichiers TestPersonnes.java et TestSpecialistes.java ont été fournis avec l'énoncé de la troisième partie. Ils ont été légèrement modifiés afin de correspndre à l'architecture des classes.  
+Au-delà des instructions spécifiées, une classe abstraite `Medecin` a été créée en tant que parent des classe `MedecinGeneraliste` et `MedecinSpecialiste`.
  
 </details>
 
@@ -69,5 +70,5 @@ Partie 2 - Terminée
 Partie 3 - Terminée
 
 #### Dernière mise à jour
-05/07/2020  
-(README | 05/07/2020)
+06/07/2020  
+(README | 06/07/2020)
