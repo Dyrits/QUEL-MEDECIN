@@ -65,9 +65,9 @@ Au-delà des instructions spécifiées, une classe abstraite `Medecin` a été c
 </details>
 
 ### Statut
-Partie 1 - Terminée  
-Partie 2 - Terminée  
-Partie 3 - Terminée
+Quel Médecin 1 - Terminé  
+Quel Médecin 2 - Terminé  
+Quel Médecin 3 - Terminé
 
 #### Dernière mise à jour
 06/07/2020  
