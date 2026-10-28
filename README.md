@@ -1,74 +1,27 @@
 # Quel Médecin
 
-## A propos de ce projet
+A medical appointment management application built with Java, as practical work for an ENI course.
 
-### Cursus
-ENI | La Programmation Orientée Objet (POO) avec Java  
-~ [Module 3 - La création de classes](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2003%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%201.pdf)  
-~ [Module 4 - Les associations](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2004%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%202.pdf)  
-~ [Module 5 - L'héritage](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2005%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%203.pdf)
+## About The Project
 
-### Énoncés (par l'ENI)
+Practical work for the ENI course "La Programmation Orientée Objet (POO) avec Java", spread over three modules. The original assignments (in French) are available in the repository:
 
-<details markdown="block">
-<summary>Partie 1</summary>  
+- [Module 3 - La création de classes](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2003%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%201.pdf)
+- [Module 4 - Les associations](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2004%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%202.pdf)
+- [Module 5 - L'héritage](https://github.com/Dyrits/QUEL-MEDECIN/blob/master/Module%2005%20-%20Enonc%C3%A9%20TP%20-%20Quel%20m%C3%A9decin%20-%20partie%203.pdf)
 
-Le projet représente la gestion d'une application de prise de rendez-vous d'un cabinet
-médical. Pour commencer notre projet se limite aux classes Patient , MedecinGeneraliste
-et Adresse
-- Créer le package fr.eni.ecole.quelMedecin.test qui contiendra les fichiers de tests.
-- Créer le package fr.eni.ecolequelMedecin.bo qui contiendra les classes à créer.
+From the assignments: the project is an appointment booking application for a medical practice. The first part covers the `Patient`, `MedecinGeneraliste` and `Adresse` classes, the second adds associations between the classes, and the third introduces inheritance.
 
-</details>
+From the author's notes: the project was built from scratch following specific instructions. The test files of parts 2 and 3 (TestAssoAdresse.java, TestCreneau.java, TestRDV.java, TestPersonnes.java, TestSpecialistes.java) were provided with the assignments and slightly modified to match the class architecture; beyond the instructions, an abstract `Medecin` class was created as the parent of `MedecinGeneraliste` and `MedecinSpecialiste`.
 
-<details markdown="block">
-<summary>Partie 2</summary>  
+## Built With
 
-Ce TP est la suite de l application de prise de rendez-vous d'un cabinet médical.
-Dans cette itération, nos instances vont pouvoir interagir entre elles par associations.
-- Reprendre le projet QuelMedecin.
-
-</details>
-
-<details markdown="block">
-<summary>Partie 3</summary>  
-
-Ce TP est la suite et la fin de l' 'application de prise de rendez-vous d'un cabinet médical.
-Dans cette itération, nous ajoutons la notion de classe d'héritage
-- Reprendre le projet QuelMedecin
-
-</details>
-
-> Plus de détails sont disponibles dans les fichiers au format PDF correspondant à chaque énoncé.
-
-### Technologie principale
 - Java
 
-### Détails | Commentaires
-Ce projet a été construit à partir de zéro en suivant des instructions spécifiques.
+## License
 
-<details markdown="block">
-<summary>Partie 2</summary> 
+No license file is present in this repository.
 
-Les fichiers TestAssoAdresse.java, TestCreneau.java et TestRDV.java ont été fournis avec l'énoncé de la deuxième partie. Ils ont été légèrement modifiés afin de correspndre à l'architecture des classes.
- 
-Les précédents fichiers de test n'étant plus à jour ont été commentés.
+## Contact
 
-</details>
-
-<details markdown="block">
-<summary>Partie 3</summary> 
-
-Les fichiers TestPersonnes.java et TestSpecialistes.java ont été fournis avec l'énoncé de la troisième partie. Ils ont été légèrement modifiés afin de correspndre à l'architecture des classes.  
-Au-delà des instructions spécifiées, une classe abstraite `Medecin` a été créée en tant que parent des classe `MedecinGeneraliste` et `MedecinSpecialiste`.
- 
-</details>
-
-### Statut
-Quel Médecin 1 - Terminé  
-Quel Médecin 2 - Terminé  
-Quel Médecin 3 - Terminé
-
-#### Dernière mise à jour
-06/07/2020  
-(README | 06/07/2020)
+Dylan J. Gerrits - [GitHub](https://github.com/Dyrits)
